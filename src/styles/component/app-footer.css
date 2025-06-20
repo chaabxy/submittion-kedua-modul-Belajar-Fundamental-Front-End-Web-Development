@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 0.875rem;
+  }
+}

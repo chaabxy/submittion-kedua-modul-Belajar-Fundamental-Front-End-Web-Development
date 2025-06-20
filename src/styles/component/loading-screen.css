@@ -1,0 +1,57 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  z-index: 1000;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  color: var(--color-dark);
+  margin-top: 1rem;
+  opacity: 0;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  margin-top: 1rem;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background-color: var(--color-accent);
+  border-radius: 3px;
+}
